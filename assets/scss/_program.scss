@@ -1,0 +1,11 @@
+.program {
+    min-height: 95vh;
+    width: 100%;
+    background-image: url(/assets/image/BEZ_TEXTU_oznam_BAREVNA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    @include flexbox {
+        flex-direction: column;
+    }
+}
