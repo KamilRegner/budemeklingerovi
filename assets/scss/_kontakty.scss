@@ -1,0 +1,49 @@
+.kontakty {
+  width: 100%;
+  min-height: 90vh;
+  @include flexbox {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .contact {
+      max-width: 800px;
+      width: 90vw;
+    @include flexbox {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    img {
+      max-height: 10rem;
+      max-width: 10rem;
+      width: 80vw;
+      height: 80vw;
+      border-radius: 50%;
+      margin: 1rem;
+    }
+    .text {
+        width: 40vw;
+      @include flexbox {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: flex-start;
+      }
+      ul {
+        padding-left: 0;
+        margin-top: 0.3rem;
+          li {
+              list-style: none;
+          }
+      }
+    }
+  }
+}
