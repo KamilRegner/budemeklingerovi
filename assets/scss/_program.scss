@@ -1,11 +1,12 @@
 .program {
   min-height: 95vh;
+  padding-top: 3rem;
   width: 100%;
-  background-image: url(/assets/image/BEZ_TEXTU_oznam_BAREVNA-white.png);
+  background-image: url(/assets/image/BEZ_TEXTU_oznam_BAREVNA-white-large.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-position: bottom center;
+  background-position: bottom left;
   @include flexbox {
     flex-direction: column;
   }
