@@ -11,6 +11,9 @@
     h2 {
         font-size: 3rem;
         color: $gold;
+        @include for-size('tablet'){
+            text-align: center;
+        }
     }
     .box {
         width: 100%;
