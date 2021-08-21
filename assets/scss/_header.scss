@@ -1,13 +1,13 @@
 .header {
   position: absolute;
-  top     : 0;
+  top: 0;
   z-index: 10;
 
   height: 4rem;
 
   background-color: black;
-  color           : $white;
-  width           : 100%;
+  color: $white;
+  width: 100%;
 
   @include flexbox {
     flex-direction: column;
@@ -16,14 +16,14 @@
   .nav {
     list-style: none;
 
-    width    : 90vw;
+    width: 90vw;
     max-width: 1200px;
 
     text-transform: uppercase;
-    font-size     : 1rem;
+    font-size: 1rem;
 
     @include flexbox {
-      flex-direction : row;
+      flex-direction: row;
       justify-content: space-between;
     }
 
@@ -38,7 +38,7 @@
 
   // responsive part
   .nav {
-    @include for-size('tablet') {
+    @include for-size("tablet") {
       display: none;
     }
   }
@@ -62,22 +62,22 @@
 
 // resposive part
 .menuButton {
-  cursor  : pointer;
-  height  : 1.5rem;
+  cursor: pointer;
+  height: 1.5rem;
   position: relative;
-  display : none;
+  display: none;
 
-  @include for-size('tablet') {
+  @include for-size("tablet") {
     display: block;
   }
 
   .burger {
-    position  : absolute;
-    top       : -0.2rem;
-    opacity   : 1;
-    fill      : $grey;
-    cursor    : pointer;
-    transition: .5s;
+    position: absolute;
+    top: -0.2rem;
+    opacity: 1;
+    fill: $grey;
+    cursor: pointer;
+    transition: 0.5s;
 
     &:hover {
       fill: $gold;

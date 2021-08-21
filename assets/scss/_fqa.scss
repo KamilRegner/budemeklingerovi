@@ -11,7 +11,7 @@
     h2 {
         font-size: 3rem;
         color: $gold;
-        @include for-size('tablet'){
+        @include for-size("tablet") {
             text-align: center;
         }
     }

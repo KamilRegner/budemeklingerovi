@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Dosis:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Dosis:wght@500&display=swap");
 
-html{
-
+html {
   scroll-behavior: smooth;
 }
 
@@ -11,7 +10,7 @@ body {
   width: 100%;
 
   color: $black;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 1.1rem;
 
   @include flexbox {
