@@ -11,6 +11,9 @@
   }
   h2 {
     font-size: 3rem;
+    @include for-size('tablet'){
+      text-align: center;
+    }
   }
   h3 {
     font-size: 2.5rem;
@@ -22,12 +25,19 @@
     @include flexbox {
       flex-direction: row;
       justify-content: center;
+      @include for-size('tablet'){
+        flex-direction: column;
+      }
     }
 
     .contact {
       margin: 3rem;
       @include flexbox {
         flex-direction: column;
+      }
+      @include for-size('tablet'){
+        margin: 1.5rem;
+        margin-bottom: 0;
       }
 
       img {
