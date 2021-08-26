@@ -14,9 +14,9 @@ function gallery() {
    setInterval(() => {
       opacityDown('gallery');
 
-      let src = "/assets/image/gallery/0";
+      let src = "/assets/image/webp/gallery/0";
       src += getRandomArbitrary(1, 9);
-      src += ".jpg";
+      src += ".webp";
       document.getElementById('gallery').setAttribute("src", src);
       console.log(src);
 
