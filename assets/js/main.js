@@ -1,6 +1,6 @@
 $(document).ready(() => {
    menu();
-   gallery();
+   // gallery();
 });
 
 function menu() {
@@ -12,12 +12,31 @@ function menu() {
 
 function gallery() {
    setInterval(() => {
+      opacityDown('gallery');
+
       let src = "/assets/image/gallery/0";
       src += getRandomArbitrary(1, 9);
       src += ".jpg";
       document.getElementById('gallery').setAttribute("src", src);
       console.log(src);
-   }, 4000);
+
+      opacityUp('gallery');
+   }, 5000);
+}
+
+function opacityUp(id) {
+   for (let index = 0; index < 100; index++) {
+      document.getElementById(id).style.opacity = index;
+      console.log(index);
+      setTimeout(()=>{}, 100);
+   }
+}
+
+function opacityDown(id) {
+   for (let index = 100; index > 0; index--) {
+      document.getElementById(id).style.opacity = index;
+      setTimeout(()=>{}, 100);
+   }
 }
 
 function getRandomArbitrary(min, max) {
