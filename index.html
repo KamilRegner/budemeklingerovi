@@ -1,17 +1,290 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Klingerovi</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <title>Budeme Klingerovi!</title>
 </head>
+
 <body>
-    <div class="pre-box">
-        <h1>Klingerovi</h1>
-        <p>25. 9. 2021</p>
-        <p>Na webu se intenzivně pracuje.</p>
+  <header class="header">
+    <a class="menuButton" id="button_menu">
+      <svg id="burger-open" class="closed burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+      </svg>
+      <svg id="burger-close" class="open burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path
+          d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+      </svg>
+    </a>
+    <nav class="nav" id="section_menu">
+      <a href="#story">
+        <li>Náš příběh</li>
+      </a>
+      <a href="#info">
+        <li>Rychlý přehled</li>
+      </a>
+      <a href="#program">
+        <li>Program</li>
+      </a>
+      <a href="#ucast">
+        <li>Potvrzení účasti</li>
+      </a>
+      <a href="#kontakt">
+        <li>Kontakty</li>
+      </a>
+    </nav>
+  </header>
+  <section class="welcome">
+    <div class="welcome-blacker"></div>
+    <div class="text">
+      <h1>Vítejte na našem svatebním webu!</h1>
+      <p>Mirka & Petr<br />25. 9. 2021</p>
     </div>
+  </section>
+  <section id="story" class="story">
+    <h2>Náš příběh</h2>
+    <div class="container">
+      <p>
+        Jsme dva mladí lidé, co je dohromady spojuje vášeň pro vaření, hudbu, spánek, přírodu a Boha. Poznali jsme se na
+        našem ,,malém" Vesmíru (čti DCŽM Vesmír), který je pro nás a náš vztah nejdůležitějším místem. Proto jsme se
+        rozhodli, že zde naši lásku proměníme ve svátost manželství.
+      </p>
+      <img id="gallery" src="/assets/image/DSC_9664-min-cover.jpg" alt="Fotka Mirky a Petra" />
+  </section>
+  <section id="info" class="info">
+    <div class="mess">
+      <div class="container">
+        <h2>Mše svatá</h2>
+        <p>
+          <a href="https://en.mapy.cz/s/donalahedo" target="_blank" rel="noopener">kostel sv. Matouše v Deštném v
+            Orlických horách</a><br />od 11h
+        </p>
+      </div>
+      <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+        class="rings">
+        <path
+          d="M371.94 163.7a222.3 222.3 0 0 1 22.43 59C435.52 244.05 464 286.55 464 336a128 128 0 0 1-256 0c0-54.66 34.52-101.17 82.85-119.44A126.49 126.49 0 0 1 304 272c0 37.37-16.38 70.73-42 94.15a80.3 80.3 0 0 0 31 37 175.71 175.71 0 0 0-46.33-292.3L288 44.66 232.53 0H119.47L64 44.66l41.29 66.23A176 176 0 0 0 176 448a164 164 0 0 0 22.86-1.82A176 176 0 1 0 371.94 163.7zM128 55.34l8.53-7.34h78.94l8.53 7.34-25.47 42.26a160 160 0 0 0-45.06 0zM48 272a128.14 128.14 0 0 1 128-128c33 0 62.87 12.91 85.6 33.51-59.88 28-101.6 88-101.6 158.49a175.18 175.18 0 0 0 12 63.6C103.33 397.45 48 341.22 48 272z">
+        </path>
+      </svg>
+    </div>
+    <div class="jidlo">
+      <div class="container">
+        <h2>Svatení hostina</h2>
+        <p>
+          Po skončení obřadu bude na DCŽM Vesmír pro zvané připravena svatební
+          hostina a svatební guláš.
+        </p>
+      </div>
+      <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+        class="cheers">
+        <path
+          d="M587.6 414.1l-29.8 11.7-40.5-103c50.9-33.5 70.1-100.2 40.2-154.3l-84.1-152C467.6 6.1 456.8 0 445.4 0c-3.9 0-7.9.7-11.7 2.2L320 46.9 206.3 2.2C202.5.7 198.5 0 194.6 0c-11.3 0-22.2 6.1-28 16.5l-84.1 152c-29.9 54.1-10.7 120.8 40.2 154.3l-40.5 103-29.8-11.7c-20.6-8.1-43.8 2-51.9 22.6-1.6 4.1.4 8.8 4.5 10.4l163.8 64.4c4.1 1.6 8.8-.4 10.4-4.5 8.1-20.6-2-43.8-22.6-51.9l-29.8-11.7L167.1 341c8 1.6 16 2.5 23.8 2.5 52.6 0 100.9-34.2 114.2-87.4l14.8-59.6 14.8 59.6c13.2 53.2 61.5 87.4 114.2 87.4 7.9 0 15.9-.9 23.8-2.5l40.2 102.3-29.8 11.7c-20.6 8.1-30.7 31.3-22.6 51.9 1.6 4.1 6.3 6.1 10.4 4.5l164-64.4c4.1-1.6 6.1-6.3 4.5-10.4-8-20.5-31.3-30.6-51.8-22.5zm-329-169.6c-7.5 30-35.3 51-67.6 51-9.4 0-18.7-1.8-27.8-5.3-20.1-7.9-35.7-23.8-42.8-43.5-6.7-18.5-5.2-38 4.1-54.8l25.1-45.3 121.5 47.8-12.5 50.1zm24.2-97.2L173 104.1 201.8 52l95.4 37.5-14.4 57.8zm74.4 0l-14.4-57.7L438.2 52l28.8 52.1-109.8 43.2zm119.6 142.8c-9 3.5-18.3 5.3-27.8 5.3-32.3 0-60.1-21-67.6-51l-12.5-50.3 121.5-47.8 25.1 45.3c9.3 16.8 10.8 36.3 4.1 54.8-7.1 19.9-22.7 35.8-42.8 43.7z">
+        </path>
+      </svg>
+    </div>
+  </section>
+  <section id="program" class="program">
+    <h2>Program</h2>
+    <div class="timeline-container">
+      <div class="timeline-container">
+        <ul id="reverted">
+          <li class="done">
+            <div class="date">
+              <span class="time">11.00</span>
+              <h3>Obřad se mší svatou</h3>
+              <span class="metadata"><a href="https://en.mapy.cz/s/donalahedo" target="_blank" rel="noopener">kostel sv.
+                  Matouše</a>
+                | příjezd snoubenců v 10.45</span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">12.30</span>
+              <h3>Gratulace</h3>
+              <span class="metadata"><a href="https://en.mapy.cz/s/donalahedo" target="_blank" rel="noopener">kostel sv.
+                  Matouše</a></span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">13.00</span>
+              <h3>Společné focení</h3>
+              <span class="metadata">
+                před kostelem | následuje svatební průvod
+              </span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">13.30</span>
+              <h3>Svatební hostina / guláš</h3>
+              <span class="metadata">
+                <a href="https://en.mapy.cz/s/hanogufovo" target="_blank" rel="noopener">DCŽM Vesmír</a>
+                | hostina - pro zvané (jídlena) | guláš (venku)
+              </span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">15.00</span>
+              <h3>Zakrojení dortu, káva</h3>
+              <span class="metadata">
+                <a href="https://en.mapy.cz/s/hanogufovo" target="_blank" rel="noopener">DCŽM Vesmír</a>
+                - jídlena
+              </span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">15.15</span>
+              <h3>Focení novomanželů</h3>
+              <span class="metadata">
+                <a href="https://en.mapy.cz/s/hanogufovo" target="_blank" rel="noopener">DCŽM Vesmír</a>
+                | možnost ubytování | volná zábava
+              </span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">17.00</span>
+              <h3>Svatební veselí</h3>
+              <span class="metadata">
+                <a href="https://en.mapy.cz/s/hanogufovo" target="_blank" rel="noopener">DCŽM Vesmír</a>
+              </span>
+            </div>
+          </li>
+          <li class="done">
+            <div class="date">
+              <span class="time">18.00</span>
+              <h3>První tanec novomanželů</h3>
+              <span class="metadata">
+                <a href="https://en.mapy.cz/s/hanogufovo" target="_blank" rel="noopener">DCŽM Vesmír</a>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>Uvedené časy jsou pouze orientační.</p>
+  </section>
+
+  <section id="ucast" class="ucast">
+    <h2>Potvrzení účasti</h2>
+    <p>Prosíme o vyplnění formuláře, ať víme, zdali s vámi můžeme počítat.</p>
+    <a href="https://forms.gle/U2HxDydSmjypHdBa8" target="_blank" rel="noopener"><button>potvrdit účast</button></a>
+  </section>
+
+  <section id="kontakt" class="kontakty">
+    <h2>Kontakty na důležité osoby</h2>
+
+    <h3>Koordinátorky svatby</h3>
+    <div class="container">
+      <div class="contact">
+        <img src="/assets/image/drasnarova-min.jpg" alt="Eliska Drašnarová">
+        <ul>
+          <li>Eliška Drašnarová</li>
+          <li><a href="tel:+420731202498">731 202 498</a></li>
+          <li><a href="mailto:budemeklingerovi@gmail.com">budemeklingerovi@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <img src="/assets/image/klingerovic-min.jpg" alt="Anička Klingerová">
+        <ul>
+          <li>Anička Klingerová</li>
+          <li><a href="tel:+420773981127">773 981 127</a></li>
+          <li><a href="mailto:budemeklingerovi@gmail.com">budemeklingerovi@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Řidiči</h3>
+    <div class="container">
+      <div class="contact">
+        <img src="/assets/image/zadina1-min.jpg" alt="Vojta Zadina">
+        <ul>
+          <li>Vojta Zadina</li>
+          <li><a href="tel:+420733226632">733 226 632</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <img src="/assets/image/zadina2-min.jpg" alt="Honza Zadina">
+        <ul>
+          <li>Honza Zadina</li>
+          <li><a href="tel:+420728359610">728 359 610</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Ubytovatelé</h3>
+    <div class="container">
+      <div class="contact">
+        <img src="/assets/image/petrova-min.png" alt="Klárka Petrova">
+        <ul>
+          <li>Klárka Petrová</li>
+          <li><a href="tel:+420604178875">604 178 875</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <img src="/assets/image/kucera-min.png" alt="Petr Kučera">
+        <ul>
+          <li>Petr Kučera</li>
+          <li><a href="tel:+420731769416">731 769 416</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Další důležité osoby</h3>
+    <div class="container">
+      <div class="contact">
+        <img src="/assets/image/hoffmann-min.jpg" alt="P. Tomáš Hoffmann">
+        <ul>
+          <li>P. Tomáš Hoffmann</li>
+          <li>oddávající kněz</li>
+          <li><a href="tel:+420777589830">777 589 830</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <img src="/assets/image/drasnar-min.jpg" alt="Jan Drašnar">
+        <ul>
+          <li>Jan Drašnar</li>
+          <li>oficiální svatební fotograf</li>
+          <li><a href="mailto:jan.drasnar@email.cz">jan.drasnar@email.cz</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="fqa">
+    <h2>Často kladené otázky</h2>
+    <div class="box">
+      <p class="question">Rád bych Mikru a Péťu nějako obdaroval či podpořil. Jaké jsou možnosti?</p>
+      <p class="answare">Pokud nás chcete něčím obdarovat, tak budeme rádi za každý finanční dar, či něco malého do
+        domácnosti. Třeba stolní hru. 😁</p>
+    </div>
+    <div class="box">
+      <p class="question">Mám nápad na super hru či překvapení, které by nemělo chybět.</p>
+      <p class="answare">V tom případě prosím kontaktujte koordinátorky svatby.</p>
+    </div>
+    <div class="box">
+      <p class="question">Rád bych na místě přespal. Je to možné?</p>
+      <p class="answare">Ano, prosím vyplňte formulář potvrzující účast, ten vám o ubytování řekne vše.</p>
+    </div>
+
+  </section>
+  <footer>
+    <p>kontaktní mail: <a href="mailto:budemeklingerovi@gmail.com">budemeklingerovi@gmail.com</a></p>
+  </footer>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
