@@ -2,18 +2,11 @@
   width: 100%;
   min-height: 95vh;
 
-  background-image: url(/assets/image/webp/DSC_9677-min.webp);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background: $black;
+  z-index: -1;
 
   @include flexbox {
     flex-direction: column;
-  }
-
-  @include for-size("tablet") {
-    background-position: right;
   }
 
   .welcome-blacker {
@@ -26,6 +19,24 @@
       position: absolute;
       top: 0;
       height: 95vh;
+    }
+  }
+
+  .welcome-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    transition: .5s;
+    img {
+      width: 100%;
+      margin: 0;
+      height: 95vh;
+      object-fit: cover;
+      @include for-size("tablet"){
+        object-position: right;
+      }
     }
   }
 
